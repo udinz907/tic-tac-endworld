@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac End World</title>
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech|Trade+Winds|Gloria+Hallelujah" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js" defer></script>
+<body>
+  <div id="container">
+    <div class="game-narrative" id="game-narrative-one">
+      <p class="game-narrative-text">Dunia sedang mengalami kritis Demokrasi. Pada Tahun 2045, Pemerintah telah mencuci Otak Rakyat atas perjanjian Harapan agar Negara dapat Maju. Satu persatu Pemerintah berhasil memperbudak Rakyatnya.</p>
+      <button class="game-btn" id="narrative-one-btn">...</button>
+    </div>
+    <div class="game-narrative" id="game-narrative-two">
+      <p class="game-narrative-text">Kamu adalah Kunci Kehidupan</p>
+      <p class="game-narrative-text">Kamu satu - satunya yang akan terus sadar atas perbuatan Pemerintah yang telah gagal menepati Perjanjian tersebut. Kamu berada di tengah kehancuran sebelum Pemerintah mencuci Otak Kamu.</p>
+      <button class="game-btn" id="narrative-two-btn">...</button>
+    </div> 
+    </div>
+    <div class="game-narrative" id="game-narrative-three">
+      <p class="game-narrative-text">Kamu Siap Melawan Mereka?</p>
+      <p class="game-narrative-text">Kamu masih ada waktu untuk bertahan</p>
+      <div id="narrative-three-btns">
+        <button class="game-btn" id="narrative-three-btn">LAWAN</button>
+        <div></div>
+        <a class="game-btn" id="puppies-btn" href="https://au.pinterest.com/explore/puppy-pictures/" target="_blank">MUNDUR</a>
+      </div>
+    </div>
+    <div id="header">
+      <p class="dramatic-text">
+        <span id="tic-text">Tic </span>
+        <span id="tac-text">Tac </span>
+        <span id="doom-text">End World</span>
+      </p>
+    </div>
+    <div id="game-configuration"> 
+      <h2 id="identity-label">Tentukan Simbolmu</h2>
+      <div id="identity-selection" class="row">
+        <div class="cell identity-cell" value="X">X</div>
+        <div class="cell identity-cell" value="O">O</div>
+      </div>
+    </div>
+    <div id="game-grid">
+      <div class="row">
+        <div class="cell game-cell" id="c00"></div>
+        <div class="cell game-cell" id="c01"></div>
+        <div class="cell game-cell" id="c02"></div>
+      </div>
+      <div class="row">
+        <div class="cell game-cell" id="c10"></div>
+        <div class="cell game-cell" id="c11"></div>
+        <div class="cell game-cell" id="c12"></div>
+      </div>
+      <div class="row">
+        <div class="cell game-cell" id="c20"></div>
+        <div class="cell game-cell" id="c21"></div>
+        <div class="cell game-cell" id="c22"></div>
+      </div>
+      <div class="computer-threat">
+        <p><span id="computer-threat-text"></span></p>
+      </div>
+    </div>
+    <div id="game-over">
+      <h2 id="game-end-heading"></h2>
+      <h3 id="game-end-subheading"></h3>
+      <button class="game-btn" id="game-reset-btn">&#8634; Mainkan Lagi </button>
+    </div>
+  </div>
+</body>
+</html>
